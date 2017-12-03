@@ -1,0 +1,822 @@
+#wrapper{
+    width:100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin:0 auto;
+}
+/*header头部*/
+.jd-search{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width: 100%;
+    max-width:640px;
+    min-width: 320px;
+    height:40px;
+    z-index: 9999;
+    /*background: #cd3727;*/
+    transition: all .2s;
+}
+
+.sea-bg{
+    background: rgba(205,55,39,0.95);
+}
+
+.jd-search header{
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+
+.jd-search header .jd-logo{
+    position: absolute;
+    padding-left:10px;
+    padding-top:9px;
+    width: 56px;
+    height: 40px;
+}
+
+.jd-search header .jd-logo a{
+    display: block;
+}
+
+.jd-search header .jd-logo a i{
+    width: 56px;
+    height: 40px;
+    background-position: 0 -109px;
+}
+
+.jd-search header .search{
+    width: 100%;
+    height:100%;
+    padding-left: 76px;
+    padding-right: 48px;
+}
+
+.jd-search header .search form{
+    display: inline-block;
+    width:100%;
+    height:30px;
+    background: #fff;
+    border-radius: 15px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.jd-search header .search form span.sprite-icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height:20px;
+    background-position: -60px -109px;
+    margin-left: 8px;
+}
+
+.jd-search header .search form input{
+    display: inline-block;
+    width: 83.3%;
+    height:100%;
+}
+
+.jd-search header .login{
+    position: absolute;
+    right:10px;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.jd-search header .login a{
+    color: #fff;
+}
+
+
+/*banner轮播*/
+#slider{
+    position: relative;
+    width: 100%;
+}
+
+#slider .slider-touch{
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider .slider-touch ul{
+    width: 1000%;
+    height: 182.28px;
+    /*-webkit-transform: translateX(-10%);*/
+    /*transform: translateX(-10%);*/
+}
+
+#slider .slider-touch ul li{
+    width: 10%;
+    float: left;
+}
+
+#slider .slider-touch ul li a{
+    display: block;
+    width: 100%;
+}
+
+#slider .slider-touch ul li a img{
+    width: 100%;
+}
+
+div.swiper-pagination{
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    left: 0;
+    text-align: center;
+}
+
+div.swiper-pagination span{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin:0 2px;
+}
+
+div.swiper-pagination span.swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+/*nav导航*/
+#nav{
+    width: 100%;
+}
+
+#nav nav{
+    width: 100%;
+    padding-top: 10px;
+}
+
+#nav nav a{
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#nav nav a img{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 5px;
+}
+
+/*adv广告*/
+#adv{
+    display: none;
+    width: 100%;
+}
+
+main{
+    display: block;
+    width: 100%;
+    background: #edeff2;
+}
+
+/*掌上秒杀*/
+main .floor{
+    width: 100%;
+    margin-top: 8px;
+}
+
+main .floor .floor-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+main .floor .floor-container .title-wrap{
+    position: relative;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    vertical-align: middle;
+    overflow: hidden;
+    background: #fff;
+}
+
+main .floor .floor-container .title-wrap:after{
+    content: '';
+    position: absolute;
+    right:0;
+    top:0;
+    height: 1px;
+    width: 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    border-top:1px solid #e4e4e4;
+}
+
+main .title-wrap>span.sprite-icon{
+    margin-left: 10px;
+    margin-top: 7px;
+    width: 18px;
+    height: 20px;
+    background-position: -84px -111px;
+}
+
+main .title-wrap h2.secskill-title{
+    font-size:14px;
+    color: #CA1327;
+    margin: 1px 5px 0;
+}
+
+main .title-wrap .secskill-timer{
+    margin-left: 10px;
+}
+
+main .title-wrap .secskill-timer span.secskill-time{
+    display: inline-block;
+    width: 18px;
+    height:18px;
+    line-height: 18px;
+    background: #000;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+}
+
+main .title-wrap .secskill-more{
+    color: #aaa;
+    padding-right: 10px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+main .title-wrap .secskill-more>span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main .title-wrap .secskill-more>span.sprite-icon{
+    width: 7px;
+    height: 14px;
+    background-position: -186px -50px;
+}
+
+            /*秒杀内容*/
+main .secskill-content{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5px;
+    background: #fff;
+}
+
+main .secskill-content ul{
+    width:700%;
+}
+
+main .secskill-content ul li{
+    width: 4%;
+    float: left;
+    text-align: center;
+}
+
+main .secskill-content ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+main .secskill-content ul li a:after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right:0;
+    top:0;
+    background: #e2e2e2;
+    -webkit-transform: scaleX(0.5);
+    -moz-transform: scaleX(0.5);
+    -ms-transform: scaleX(0.5);
+    -o-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+
+main .secskill-content ul li a img{
+    display: inline-block;
+    width: 80%;
+}
+
+main .secskill-content ul li p:nth-child(2){
+    color: #F17A5C;
+    margin-top: 8px;
+    font-size:14px;
+}
+
+main .secskill-content ul li p:nth-child(3){
+    color: #acacac;
+    font-size:14px;
+    text-decoration: line-through;
+}
+
+main .floor-container .swiper-secskill{
+    padding-bottom: 4px;
+}
+
+main .secskill-content ul li a.more-skill{
+    position: relative;
+    display: block;
+    width: 20px;
+    background: #eaeaea;
+    margin: auto;
+    padding-top: 22px;
+    color: #414141;
+}
+
+main .secskill-content ul li a.more-skill .sprite-icon{
+    position: absolute;
+    top:5px;
+    width: 12px;
+    height: 12px;
+    background-position: -107px -109px;
+}
+
+/*京东超市*/
+.jd-show .floor-container:nth-child(1) .item{
+    float: left;
+    width: 33.3333333%;
+}
+
+.jd-show .floor-container:nth-child(2) .item{
+    float: left;
+    width: 50%;
+}
+
+/*广告轮播*/
+.advert .floor-container{
+    position: relative;
+    padding:0 8px;
+}
+
+.advert .floor-container .advert-pro1,
+.advert .floor-container .advert-pro2,
+.advert .floor-container .advert-pro3{
+    width:100%;
+    overflow:hidden;
+}
+
+.advert .floor-container ul{
+    width:400%;
+}
+
+.advert .floor-container ul li{
+    width:25%;
+    float:left;
+}
+
+.advert .floor-container .swiper-pagination1,
+.advert .floor-container .swiper-pagination2,
+.advert .floor-container .swiper-pagination3{
+    position: absolute;
+    width: 100%;
+    bottom: 4px;
+    left: 0;
+    text-align: center;
+}
+
+.advert .floor-container .swiper-pagination1 span,
+.advert .floor-container .swiper-pagination2 span,
+.advert .floor-container .swiper-pagination3 span{
+    display:inline-block;
+    width:6px;
+    height:6px;
+    border:1px solid #FFF;
+    border-radius:50%;
+    margin:0 2px;
+}
+
+.advert .floor-container .swiper-pagination1 span.swiper-pagination-bullet-active,
+.advert .floor-container .swiper-pagination2 span.swiper-pagination-bullet-active,
+.advert .floor-container .swiper-pagination3 span.swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+/*特色市场*/
+.floor .floor-title{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    background: #fff;
+    padding-left: 8px;
+}
+
+.floor .floor-title a{
+    color: #F25353;
+}
+
+.floor .floor-container .left,
+.floor .floor-container .right{
+    float: left;
+    width: 50%;
+}
+
+/*主题街*/
+.floor .floor-container .top,
+.floor .floor-container .bottom{
+    width: 100%;
+}
+
+.floor .floor-container .bottom a{
+    float: left;
+    width: 50%;
+}
+
+.floor .ztj .top a,
+.floor .ztj .bottom a{
+    float: left;
+    width: 25%;
+}
+
+/*品牌推荐*/
+.brand{
+    padding: 0 8px;
+}
+
+.brand .item{
+    width: 30.22%;
+    float: left;
+}
+
+.brand .item:nth-child(1){
+    width: 39.55%;
+}
+
+/*为你推荐*/
+.recommend{
+    width: 100%;
+
+}
+
+.recommend .recotitle{
+    width: 100%;
+    height: 30px;
+    padding:0 8px;
+    margin-bottom: 4px;
+}
+
+.recommend .recotitle .layout{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height:30px;
+    text-align: center;
+}
+
+.recommend .recotitle .layout:after{
+    content: '';
+    position: absolute;
+    left:0;
+    top:50%;
+    margin-top: -1px;
+    width: 100%;
+    height: 1px;
+    background: #dadada;
+    z-index: 1;
+}
+
+
+.recommend .recotitle .layout span{
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100%;
+    padding-left: 30px;
+    z-index: 2;
+    font-size: 14px;
+    background: #edeff2 url("../images/gray.png") no-repeat;
+    background-size: 20%;
+    background-position: 12px 5px;
+}
+
+.recommend .recommend-pro,
+.recommend .recommend-pro .recommend-list,
+.recommend .recommend-pro .recommend-list ul{
+    width: 100%;
+}
+
+.recommend .recommend-list ul li{
+    float: left;
+    width: 50%;
+    margin-bottom: 4px;
+    padding-bottom: 2px;
+}
+
+.recommend .recommend-list ul li .similar-product{
+    padding-bottom: 6px;
+    background: #fff;
+}
+
+.recommend .recommend-list ul li:nth-child(odd){/*奇数*/
+    padding-right: 2px;
+}
+
+.recommend .recommend-list ul li:nth-child(even){/*偶数*/
+    padding-left: 2px;
+}
+
+.recommend .recommend-list ul li a .prodouct-description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    height: 30px;
+    line-height: 16px;
+    font-size: 13px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    padding: 0 4px;
+    margin: 5px 0 3px 0;
+}
+
+.recommend .recommend-list ul li a .prodouct{
+    height: 23px;
+    line-height: 23px;
+    font-size: 13px;
+    overflow: hidden;
+    color: #f23030;
+}
+
+.recommend .recommend-list ul li a .prodouct-price{
+    display: inline-block;
+    height:23px;
+    line-height: 23px;
+    padding: 0 4px;
+}
+
+.recommend .recommend-list ul li a .prodouct-price>span{
+    display: inline-block;
+}
+
+.recommend .recommend-list ul li a .prodouct-price .big-price{
+    font-size: 16px;
+    padding-left: 3px;
+}
+
+.recommend .recommend-list ul li .bottom{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    line-height:25px;
+    padding:0 4px;
+}
+
+.recommend .recommend-list ul li .bottom span:nth-child(1){
+    display: block;
+    font-size: 20px;
+    color: #999;
+    width: 100%;
+    height: 25px;
+    line-height:25px;
+    padding-right: 60px;
+    overflow: hidden;
+}
+
+.recommend .recommend-list ul li .bottom span:nth-child(1) span{
+    position: relative;
+    top:6px;
+    display: block;
+    width: 200%;
+    -webkit-transform: scale(0.5 , 0.5);
+    transform: scale(0.5 , 0.5);
+    -webkit-transform-origin: left top;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.recommend .recommend-list ul li .bottom span:nth-child(2){
+    position: absolute;
+    top:0;
+    right:8px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    width: 49px;
+    height: 24px;
+    line-height:25px;
+    color: #5b5b5b;
+}
+
+.recommend .recommend-list ul li .bottom span:nth-child(2):after{
+    position: absolute;
+    left: 0;
+    top:0;
+    content: '';
+    display: block;
+    width:200%;
+    height:200%;
+    -webkit-transform: scale(0.5 , 0.5);
+    transform: scale(0.5 , 0.5);
+    -webkit-transform-origin: left top;
+    border:1px solid #bfbfbf;
+    border-radius: 4px;
+}
+
+main .continue{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    background: #F3F5F7;
+}
+
+main .continue a{
+    color: #505050;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+
+/*jd-link*/
+footer .jd-link{
+    width: 100%;
+}
+
+footer .jd-link .link-list{
+    width: 100%;
+    overflow: hidden;
+}
+
+footer .jd-link .link-list ul{
+    width: 320px;
+    margin: auto;
+    display: table;
+    padding: 18px 0;
+}
+
+footer .jd-link .link-list ul li{
+    display: table-cell;
+    width: 69px;
+    border-right: 1px solid #ccc;
+}
+
+footer .jd-link .link-list ul li:first-child{
+    width: 90px;
+}
+footer .jd-link .link-list ul li:last-child{
+    width: 90px;
+    border-right: none;
+}
+
+footer .jd-link .link-list ul li a{
+    color: #707070;
+    font-size: 13px;
+}
+
+/*jd-platform*/
+footer .jd-platform{
+    width: 100%;
+}
+
+footer .jd-platform .platform-list{
+    width: 100%;
+    overflow: hidden;
+}
+
+footer .jd-platform .platform-list ul{
+    display: table;
+    width: 320px;
+    height: 69px;
+    margin: auto;
+}
+
+footer .jd-platform .platform-list ul li{
+    display: table-cell;
+}
+
+footer .jd-platform .platform-list ul li a{
+    position: relative;
+    display: block;
+    width: 45px;
+    margin:auto;
+    color: #939393;
+    /*opacity: .6;*/
+}
+
+footer .jd-platform .platform-list ul li a:before{
+    content: '';
+    display: block;
+    height: 38px;
+    width: 33px;
+    margin: 9px auto 0;
+    background: url("../images/jd-sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+
+footer .jd-platform .platform-list ul li.plat1 a:before{
+    background-position: -120px -70px;
+    opacity: .6;
+}
+
+footer .jd-platform .platform-list ul li.plat2 a:before{
+    background-position: -40px -70px;
+}
+
+footer .jd-platform .platform-list ul li.plat3 a:before{
+    background-position: -80px -70px;
+    opacity: .6
+}
+
+footer .jd-platform .platform-list ul li.plat2 a{
+    opacity:1;
+    color: #010101;
+}
+
+footer .jd-platform .platform-list ul li.plat1 a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:2px;
+    right:3px;
+    height: 10px;
+    width: 10px;
+    background: url("../images/jd-sprites.png") no-repeat;
+    background-size: 200px 200px;
+    background-position: -150px 0;
+}
+
+footer .copyright{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #848689;
+    font-size: 12px;
+}
+
+/*menu*/
+#menu{
+    position: fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:50px;
+    z-index: 999;
+}
+
+#menu .menu-list{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0 0 10px 0px rgba(155,143,143,0.6);
+    -moz-box-shadow: 0 0 10px 0px rgba(155,143,143,0.6);
+    box-shadow: 0 0 10px 0px rgba(155,143,143,0.6);
+}
+
+#menu .menu-list ul{
+    width: 100%;
+    height: 100%;
+}
+
+#menu .menu-list ul li{
+    float: left;
+    width: 20%;
+}
+
+#menu .menu-list ul li a{
+    width: 65px;
+    height: 100%;
+    margin: auto;
+}
+
+/*top*/
+#top{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#top .backTop{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/scroll-to-top-icon.png") no-repeat;
+    background-size: 30px 30px;
+}

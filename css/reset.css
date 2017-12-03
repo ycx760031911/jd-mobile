@@ -1,0 +1,95 @@
+
+html{
+    font-family:"Helvetica Neue", Helvetica, sans-serif;
+    /*谷歌浏览器最小字体12px*/
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+    /*开启mobile网页快速滚动和会弹效果*/
+    -webkit-overflow-scrolling: touch;
+    font-size:12px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+a.line,.topLine{
+    position: relative;
+}
+
+a.line:after,.topLine:after{
+    content: '';
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+a.line:after{
+    height:100%;
+    width: 1px;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+    border-right:1px solid #d9d9d9;
+}
+
+.topLine:after{
+    height: 1px;
+    width: 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    border-top:1px solid #d9d9d9;
+}
+
+img{
+    width:100%;
+    border:0;
+    display: block;
+    vertical-align: middle;
+}
+
+input{
+    /*关闭inout框的默认样式*/
+    -webkit-appearance: none;
+    outline:none;
+    border:none;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    width:100%;
+    height:0;
+    clear: both;
+}
+
+ol,li{
+    list-style:none;
+}
+
+.sprite-icon{
+    display: inline-block;
+    background: url("../images/jd-sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
